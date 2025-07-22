@@ -4,9 +4,7 @@ import React, { useState, useEffect } from 'react';
 import './App.css';
 import MovieCard from './components/MovieCard';
 
-// OMDb API URL with your key
-const API_URL = 'http://www.omdbapi.com?apikey=d21157a8';
-
+const API_URL = 'https://www.omdbapi.com?apikey=d21157a8';
 const App = () => {
   // State variables
   const [movies, setMovies] = useState([]);
