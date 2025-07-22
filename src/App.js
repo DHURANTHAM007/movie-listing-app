@@ -4,7 +4,9 @@ import React, { useState, useEffect } from 'react';
 import './App.css';
 import MovieCard from './components/MovieCard';
 
+// OMDb API URL with your key
 const API_URL = 'https://www.omdbapi.com?apikey=d21157a8';
+
 const App = () => {
   // State variables
   const [movies, setMovies] = useState([]);
@@ -14,7 +16,7 @@ const App = () => {
 
   // Function to search for movies
   const searchMovies = async (title) => {
-    if (!title) return; // Don't search if the input is empty
+    if (!title) return;
 
     setLoading(true);
     setError(null);
@@ -50,7 +52,7 @@ const App = () => {
 
   return (
     <div className="app">
-      <h1>MovieLand</h1>
+      <h1>CineVerse</h1>
 
       <div className="search">
         <input
